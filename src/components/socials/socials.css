@@ -1,0 +1,20 @@
+.s-container {
+	background-color: #f0f0f0;
+	height: 70px;
+	align-items: center;
+	margin: 0 auto;
+	width: 880px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.icon{
+	width: 250px;
+}
+
+.icon:hover {
+	display: none;
+}
+
+

@@ -1,10 +1,21 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+footer {
+	align-items: center;
+	margin-top: auto 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -24,15 +35,12 @@
   color: white;
 }
 
+body{
+	background-color: #282c4f ;
+	min-height: 800px;
+}
+
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

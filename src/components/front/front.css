@@ -1,0 +1,27 @@
+.container {
+	margin: 0 auto;
+	width: 250px;
+}
+
+.container img {
+	width: 150px;
+	margin-top: 45px;
+	background-color: #002828;
+	padding: 35px;
+	box-shadow: 5px 5px 12px;
+	animation: moveIn ease 0.8s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes moveIn {
+	0% {
+		marign-right:100%;
+		width:0px;
+	}
+	100% {
+		margin-right:0%;
+		width: 150px;
+	}
+}
+
