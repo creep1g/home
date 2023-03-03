@@ -8,23 +8,38 @@ const Nav = () => {
 		<nav className="navbar">
 			<div className="navContainer">
 			  <div className="logo">
-				<NavLink to="/home">
+				<NavLink to="/info/home">
 					<img src={logo} alt="logo" />
 				</NavLink>
 			  </div>	
 			  <div className="nav-elements">
 				  <ul>
 				    <li>
-					  <NavLink to="/home">Home</NavLink>
+					  <NavLink to="/info/home">Home</NavLink>
 				    </li>
 				    <li>
-			          <NavLink to="/projects">Projects</NavLink>
+			          <NavLink to="/info/projects">Projects</NavLink>
 			        </li>
 			        <li>
-			     	  <NavLink to="/about">About me!</NavLink>
+			     	  <NavLink to="/info/about">About me!</NavLink>
 			        </li>
 				  </ul>
 			  </div>
+				  <div id="menu">
+					<div className="menu-items">
+				    <ul>
+				      <li>
+					    <NavLink to="/info/home">Home</NavLink>
+				      </li>
+				      <li>
+			            <NavLink to="/info/projects">Projects</NavLink>
+			          </li>
+			          <li>
+			     	    <NavLink to="/info/about">About me!</NavLink>
+			          </li>
+				    </ul>
+					</div>
+				  </div>	  
 			</div>
 		</nav>
 	)

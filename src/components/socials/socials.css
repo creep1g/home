@@ -1,20 +1,19 @@
 .s-container {
-	background-color: #f0f0f0;
+	background-color: #283c4f;
 	height: 70px;
 	align-items: center;
 	margin: 0 auto;
-	width: 880px;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-}
-
-.icon{
-	width: 250px;
-}
-
-.icon:hover {
-	display: none;
+	box-shadow: 0px 5px 12px;
 }
 
 
+
+@media (max-width: 450px) and (max-height: 1000px), screen and (orentation: portrait) {
+	.s-container{ 
+		display:none;
+	}
+} 

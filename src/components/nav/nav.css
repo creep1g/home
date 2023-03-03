@@ -1,5 +1,4 @@
 .navContainer {
-  max-width: 1100px;
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
@@ -20,9 +19,10 @@ img:hover {
 }
 
 .navbar {
+  width: 100%;
   height: 60px;
   background-color: #282c34;
-  position: relative;
+  position: center;
   box-shadow: 0px 0px 5px 1px;
 }
 
@@ -72,3 +72,17 @@ img:hover {
 	font-weight: 800;
 }
 
+#menu {
+	display: none;
+}
+
+@media screen and (max-height:1024px) and (max-width:920px){
+	.nav-elements {
+		display: none;
+	}
+	/* #menu { */
+		/* display: block; */
+	/* } */
+	
+	
+}

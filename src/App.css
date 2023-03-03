@@ -12,16 +12,10 @@
 footer {
 	align-items: center;
 	margin-top: auto 0;
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	left: 0;
 	right: 0;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {

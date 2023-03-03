@@ -1,9 +1,10 @@
 .container {
 	margin: 0 auto;
-	width: 250px;
+	width: 100%;
 }
 
 .container img {
+	opacity: 0;
 	width: 150px;
 	margin-top: 45px;
 	background-color: #002828;
@@ -14,12 +15,86 @@
 	animation-fill-mode: forwards;
 }
 
+.container h1 {
+	opacity: 0;
+	color: #fcfcf0;
+	font-size: 3em;
+	animation: moveInRight ease 0.8s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+.info p {
+	opacity:0;
+	font-size: 25px;
+	white-space: pre-wrap;
+	color: #fcfcf0;
+	animation: moveInLeft ease 1.2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.info p a{
+	text-decoration: none;
+	color: #fcfcf1;
+	transition: all 0.5s ease-in-out;
+}
+
+a {
+	animation: moveInLeft ease 1.2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+}
+
+.info p a:hover{
+	font-size: 28px;
+	text-decoration: underline;
+}
+
+@keyframes moveInRight {
+	0% {
+		margin-left: 100%;
+		opacity:0;
+		width: 300%;
+	}
+	100% {
+		margin-left: 0;
+		opacity:1;
+		width: 100%;
+	}
+}
+
+@keyframes moveInLeft {
+	0% {
+		margin-right: 100%;
+		opacity:0;
+		width: 300%;
+	}
+	100% {
+		margin-right: 0;
+		opacity:1;
+		width: 100%;
+	}
+}
+
+@keyframes moveInBottom {
+	0% {
+		opacity:0;
+		bottom: 0;
+	}
+	100% {
+		opacity:1;
+		bottom: 100;
+	}
+}
 @keyframes moveIn {
 	0% {
+		opacity:0;
 		marign-right:100%;
 		width:0px;
 	}
 	100% {
+		opacity:1;
 		margin-right:0%;
 		width: 150px;
 	}

@@ -4,7 +4,7 @@ import './socials.css';
 
 const Socials = () => {
 	return (
-		<div className="s-container">
+		<div className="s-container" id="container">
 			<SocialIcon className="icon" url="https://github.com/creep1g" />
 			<SocialIcon className="icon" url="https://instagram.com/reddish_ant" />
 			<SocialIcon className="icon" url="https://www.linkedin.com/in/thorgilshjalmarsson/" />
