@@ -1,18 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../static/logo.ico';
-import './nav.css';
+import Styles from "./styles.module.css";
 
 const Nav = () => {
 	return (
-		<nav className="navbar">
-			<div className="navContainer">
-			  <div className="logo">
+		<nav className={Styles.navbar}>
+			<div className={Styles.navContainer}>
+			  <div className={Styles.logo}>
 				<NavLink to="/info/home">
-					<img src={logo} alt="logo" />
+					<img src={logo} alt="logo" className={Styles.img} />
 				</NavLink>
 			  </div>	
-			  <div className="nav-elements">
+			  <div className={Styles.navelements}>
 				  <ul>
 				    <li>
 					  <NavLink to="/info/home">Home</NavLink>
@@ -25,8 +25,8 @@ const Nav = () => {
 			        </li>
 				  </ul>
 			  </div>
-				  <div id="menu">
-					<div className="menu-items">
+				  <div className={Styles.menu}>
+					<div className={Styles.menuitems}>
 				    <ul>
 				      <li>
 					    <NavLink to="/info/home">Home</NavLink>

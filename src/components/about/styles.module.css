@@ -1,0 +1,48 @@
+.container{
+	margin: 0 auto;
+	max-height: 80vh;
+}
+.imgCont {
+	margin: 0 auto;
+}
+.text {
+	padding: 10px;
+	white-space: pre-line;
+	width: 80vw;
+	margin: 0 auto;
+	margin-top: 10px;
+	color: white;
+	opacity: 0;
+	font-size: 1.3em;
+
+	animation: fadeInAnimation ease 2s;
+	animation-delay: 0.2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.img {
+	margin-top: 5px;
+	width: 35%;
+	animation: moveInAnimation ease 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0; 
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes moveInAnimation {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}

@@ -1,7 +1,7 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Front from './components/front/front';
-import About from './components/about/about';
+import About from './components/about/';
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import './about.css'
-
+import Styles from "./styles.module.css";
+import media from '../../static/bass.jpg';
 
 var name = "Þorgils";
 var text = `
@@ -14,19 +14,15 @@ In addition to his work, ${name} is also a devoted father to his 5-year-old son.
 `
 const About = () => {
 	return (
-			
-		<div className="about-container">
-		<div className="title">
-			<h1>Who am I?</h1>
-		</div>
-		<div className="description">
-			<div className="text">
-		      <span>
-			    {text}
-			  </span>
+<>
+				<img src={media} alt="Me" className={Styles.img}/>
+		<div className={Styles.container}>
+			<div className={Styles.imgCont}>
+				<h1 style={{color:"#f0f0f0", margin:"0 auto", marginTop: "10px"}}>About Me!</h1>
+				<p className={Styles.text}>{text}</p>
 			</div>
 		</div>
-		</div>
+		</>
 	)
 }
 
